@@ -3,6 +3,7 @@
     import headBar from '../components/headBar.vue'
     import leftBar from '../components/homeLeftBar.vue'
     import Article from '../components/homeArticle.vue'
+    import rightBar from '../components/homeRightBar.vue'
 </script>
 <template>
     <!--头部来个固定布局-->
@@ -15,7 +16,8 @@
     -->
     <div class="mainBodyBox">
         <leftBar></leftBar>
-        <Article></Article>
+        <Article></Article> 
+        <rightBar></rightBar>
     </div>
     
 </template>

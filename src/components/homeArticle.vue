@@ -18,12 +18,12 @@
 <style scoped lang='less'>
     .outBox{
         width: 58%;
-        margin: 30px 50px auto;
+        margin: 30px 20px auto;
         display: flex;
         flex-direction: column;
         .ArticleBox{
             width: 100%;
-            height: 500px;
+            height: 800px;
             background-color: pink;
         }
     }

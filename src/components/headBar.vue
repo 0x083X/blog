@@ -36,7 +36,7 @@
     }
 </script>
 <template>
-    <div class="contentBox">
+    <div class="contentBox" >
         <el-menu
             :default-active="'2'"
             :class="['el-menu-demo',{bgc:changeHeadBgcColor}]"
@@ -55,7 +55,7 @@
         </el-menu> 
     </div>
     <div class="backToHead" v-if="backToHead" @click="backToHeadFun">
-        回到顶部
+        <el-icon :size="40" :color="' #202121'"><Top /></el-icon>
     </div>
     
 </template>
@@ -67,7 +67,7 @@
         width: 100%;
         height: 60px;
         .bgc{
-            background-color: red;
+            background-color:   #E5EAF3;
         }
         .el-menu-demo{
             position: fixed;
@@ -80,11 +80,15 @@
             .flex-grow {
                 flex-grow: 1;
             }
+            
             .el-menu-item{
                 //禁用复制文字
                 user-select: none;
                 &:hover{
                     color: red;
+                }
+                &.is-active{
+                    background-color: #3370ff !important;
                 }
             }
             div {
@@ -105,7 +109,7 @@
     .backToHead{
         width: 40px;
         height: 40px;
-        background-color: pink;
+        // background-color: pink;
         position: fixed;
         bottom: 50px;
         right: 30px;
