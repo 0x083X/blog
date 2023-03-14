@@ -43,7 +43,10 @@
             mode="horizontal"
             router
         >
-            <el-menu-item index="home">Home LOGO</el-menu-item>    
+            <el-tooltip content="点我回到首页" placement="bottom" effect="dark">
+            <el-menu-item index="home">Home LOGO</el-menu-item>  
+            </el-tooltip>
+  
             <div class="flex-grow" />
             <el-menu-item index="Article">Article</el-menu-item>
             <el-menu-item index="About">About Me</el-menu-item>
